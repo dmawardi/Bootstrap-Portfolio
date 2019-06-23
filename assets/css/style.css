@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     color: rgb(38, 68, 110);
     background: url("../images/email-pattern.png");
 }
@@ -9,7 +10,15 @@ h3 {
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
 }
 
-body p {
+body p {}
+
+article {
+    background: white;
+    max-width: 80%;
+}
+
+section {
+    margin: 0 auto;
 }
 
 /* Portfolio Page Grid CSS */
@@ -18,16 +27,15 @@ body p {
 
 }
 
-.portfolioGrid .row .col-sm text {
-    /* text-align: center; */
+.portfolioGrid .row .col-md-4 {
+    text-align: center;
 }
 
-.portfolioGrid .row .col-sm span {
-    margin: 0 auto;
-    position: absolute;
-    bottom: 20px;
+.portfolioGrid .row .col-md-4 span {
+    position: relative;
+    padding: 10px 25px;
+    bottom: 25px;
     z-index: 999;
-    /* bottom: 50px; */
     background: rgb(38, 68, 110);
     color: #f2f2f2;
 }
@@ -55,7 +63,7 @@ body p {
 }
 
 /* Clearfix: To ensure section containers hold all elements */
-nav::after {
+/* nav::after {
     content: "";
     display: block;
     clear: both;
@@ -64,7 +72,13 @@ section::after {
     content: "";
     display: block;
     clear: both;
+} */
+section::after {
+    content: "";
+    display: block;
+    clear: both;
 }
+
 
 /* Article CSS */
 article {
@@ -73,8 +87,7 @@ article {
 
 article p {
     color: black;
-    width: 70%;
-    float: left;
+    /* max-width: 60%; */
     text-align: justify;
 }
 
@@ -83,13 +96,11 @@ section h1 {
     padding-top: 15px;
 }
 
+
 /* Profile image CSS */
-
-.profilePic {
-    float: left;
-    width: 30%;
+.row img {
+    border-radius: 10px;
 }
-
 
 /* Form CSS */
 input[type=text],
@@ -124,4 +135,3 @@ input[type=submit] {
     padding: 5px 20px;
     color: white;
 }
-
