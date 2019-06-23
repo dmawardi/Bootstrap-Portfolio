@@ -10,14 +10,9 @@ h3 {
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
 }
 
-body p {}
-
-article {
-    background: white;
-    max-width: 80%;
-}
 
 section {
+    border-radius: 10px;
     margin: 70px auto 0 auto;
     max-width: 80%;
     background: white;
@@ -27,28 +22,20 @@ section {
 /* Footer CSS */
 footer {
     margin: 0 auto;
-    text-align: center;
-    background-color: white;
     width: 80%;
-    border-radius: 0 0 10px 10px;
+}
+
+footer .row p {
+    text-align: center;
 }
 
 .footerStrip {
     padding: 8px 0;
     background-color: rgb(38, 68, 110);
+    width: 100%;
 }
 
-/* Clearfix: To ensure section containers hold all elements */
-/* nav::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-section::after {
-    content: "";
-    display: block;
-    clear: both;
-} */
+/* Clear Fix */
 section::after {
     content: "";
     display: block;
@@ -61,11 +48,14 @@ article {
     margin: 0 auto;
     max-width: 80%;
     border-radius: 10px 10px 0 0;
+    background: white;
+    max-width: 80%;
 
 }
 
 article p {
     color: black;
+    
     text-align: justify;
 }
 
